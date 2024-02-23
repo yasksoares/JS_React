@@ -1,0 +1,9 @@
+*Declarativo* : descreve o que quer
+    Ex: Vá comprar leite
+
+*Imperativo* : Descreve como deve ser feito
+    Ex: 
+        1. Levante do sofá
+        2. Se direcione até a porta
+        3. Vá até o mercado
+        ...

@@ -1,0 +1,36 @@
+* Library vs Framework *
+
+- Library: conjunto de funcionalidades focada em resolver um tipo de problema
+
+- Framework: também são um conjunto de funcionalidades, mas resolvem vários tipos de problemas
+
+O React é uma biblioteca para a construção de interfaces, apenas cuida da criação, e nada mais. Ele é multiplataforma, não cuida
+da renderização.
+
+*ReactDOM* - para aplicações web
+*React Native* - para apps mobile
+*React Native Windows* - para apps windows
+
+*COMPONENTES*
+Os componentes são isolados em caixinhas. Os componentes são pequenas peças que quando unidas de forma lógica algo maior é formado.
+    - Como são criados?
+        JSX : Habilidade de escrever código HTML dentro do JavaScript
+        Todos os componentes no React precisam começar com letra maiúscula
+
+        Outra forma de criar um componente é com a classe, lembrando que o único método obrigatório dentro
+        dessa classe, é o método render(), é como se fosse a function
+
+    - Babel: vai realizar a transpilação para o navegador, transformar em algo que o browser compreenda
+
+    - webpack: 
+        1. Vai permitir que o JavaScript importe arquivos de imagem e arquivos CSS em arquivos JavaScript(
+            o webpack tem a tecnologia de lowders)
+
+        2. Vai ser o nosso bundler, vai pegar todos os arquivos que tínhamos e vai converter tudo para
+            apenas um arquivo JavaScript, mantendo os arquivos de imagem e estilo. Vai cuidar das partes de importe, 
+            evitando erros de ordem de importação que pode acontercer ao usar o HTML, já que este é lido de cima para
+            baixo
+    - Por que usar o React?
+        1. Reutilização de componentes(+velocidade e produtividade)
+        2. Facilidade de manutenção e escalabilidade
+        3. LOWA(learn Once, Write Anywhere)
