@@ -1,0 +1,33 @@
+Problems with cash: 
+        The browsers stores the information
+        for quick reloading for the next access,
+        but the page checks the file name, not
+        the content, what can cause out-of-date
+        problems
+
+    Solution:
+        We add a hash to file name in webpack, then
+        we download a plugin:
+            * yarn add html-webpack-plugin -D
+        
+        In package.json we import the plugin, like this: 
+            -> const HtmlWebpackPlugin = require('html-webpack-plugin'); <-
+        Next, we create a property called plugins, and within that property, 
+        we create an instance like this:
+            -> new HtmlWebpackPlugin({
+                template: path.resolve(__dirname, 'public', 'index.html'),
+            }),
+        To finish, we reload the yarn build in cmd
+
+Problems with file creation:
+        When we add automatic hashing, many files are created
+
+    Solution:
+        We install another plugin in webpack, in cmd:
+            -> yarn add clean-webpack-plugin -D
+        Then, access the webpack file and add 
+            -> const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+        In the plugins property, add:
+            -> new CleanWebpackPlugin(), 
+                *obs: no argument needs to be passed
+        To finish, we reload the yarn build in cmd
